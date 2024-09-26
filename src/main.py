@@ -1,7 +1,6 @@
-from .ipa import IPA_SYMBOLS
+from .ipa import *
 
-import sys
-from typing import List, Tuple
+from typing import List
 
 type NodeT = Node
 
