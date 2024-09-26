@@ -1,4 +1,4 @@
--- tag: consonants 
+-- tag: consonants
 ʙ: voiced bilabial trill
 β: voiced bilabial fricative
 ɕ: voiceless alveolopalatal fricative
@@ -14,13 +14,11 @@
 ɢ: voiced uvular plosive
 ʛ: voiced uvular implosive
 ɦ: voiced glottal fricative
-ɧ: voiceless multiple-place fricative
 ħ: voiceless pharyngeal fricative
 ʜ: voiceless epiglottal fricative
 ʝ: voiced palatal fricative
 ɭ: voiced retroflex lateral
 ɬ: voiceless alveolar lateral fricative
-ɫ: velarized voiced alveolar lateral
 ɮ: voiced alveolar lateral fricative
 ʟ: voiced velar lateral
 ɱ: voiced labiodental nasal
@@ -30,7 +28,7 @@
 ɴ: voiced uvular nasal
 ɸ: voiceless bilabial fricative
 θ: voiceless dental fricative
-ɹ: voiced (post)alveolar approximant
+ɹ: voiced postalveolar approximant
 ɺ: voiced alveolar lateral flap
 ɾ: voiced alveolar tap
 ɻ: voiced retroflex approximant
@@ -44,7 +42,6 @@
 ʋ: voiced labiodental approximant
 ⱱ: voiced labiodental flap
 ɣ: voiced velar fricative
-ʍ: voiceless labial-velar fricative
 χ: voiceless uvular fricative
 ʎ: voiced palatal lateral
 ʑ: voiced alveolopalatal fricative
@@ -54,23 +51,19 @@
 ʕ: voiced pharyngeal fricative
 ʢ: voiced epiglottal fricative
 
--- tag: vowels 
+-- tag: vowels
 ɑ: open back unrounded
-ɐ: open-mid schwa
+# ɐ: open-mid -- alias open-mid schwa
 ɒ: open back rounded
-æ: raised open front unrounded
 ɔ: open-mid back rounded
-ə: mid-central vowel -- alias: schwa
-ɘ: close-mid central -- alias: close-mid schwa
+ə: mid-central vowel -- alias schwa
+ɘ: close-mid central -- alias close-mid schwa
 ɛ: open-mid front unrounded
 ɜ: open-mid central
-ɝ: rhotacized open-mid central
 ɞ: open-mid central rounded
-ɥ: labial-palatal approximant
 ɨ: close central unrounded
 ɪ: near-close front unrounded
 ɯ: close back unrounded
-ɰ: velar approximant
 ø: front close-mid rounded
 ɵ: close-mid central rounded vowel -- alias rounded schwa
 œ: front open-mid rounded
@@ -88,3 +81,12 @@
 ǂ: alveolar click
 ǃ: retroflex click
 ʔ: glottal plosive
+
+-- tag: other
+ɥ: labial-palatal approximant
+ɝ: rhotacized open-mid central
+ɧ: voiceless multiple-place fricative
+ɫ: velarized voiced alveolar lateral
+ʍ: voiceless labial-velar fricative
+æ: raised open front unrounded
+ɰ: velar approximant

@@ -1,4 +1,5 @@
-from .ipa import *
+from ipa import *
+from pprint import pprint
 
 from typing import List
 
@@ -157,7 +158,8 @@ def process_word(word: str) :
     return (word, (equivalent, roots), )
 
 def main():
+    pprint(IPA_SYMBOLS)
     return
-
 if __name__ == "__main__":
     main()
+
