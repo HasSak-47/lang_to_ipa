@@ -1,6 +1,35 @@
--- tag: consonantsipa.
+-- tag: consonants
+# bilabial
+b: voiced bilabial plosive
+p: voiceless bilabial plosive
 ʙ: voiced bilabial trill
 β: voiced bilabial fricative
+
+ɸ: voiceless bilabial fricative
+
+# labiodental
+ɱ: voiced labiodental nasal
+f: voiceless labiodental labiodental
+ʋ: voiced labiodental approximant
+ⱱ: voiced labiodental flap
+
+
+# coronal plosives
+d: voiced dental plosive
+d: voiced alveolar plosive
+d: voiced postalveolar plosive
+t: voiceless dental plosive
+t: voiceless alveolar plosive
+t: voiceless postalveolar plosive
+
+x: voiceless velar fricative
+k: voiceless velar plosive
+l: voiced alveolar lateral
+m: voiced bilabial nasal
+n: voiced alveolar nasal
+s: voiceless alveolar fricative
+
+
 ɕ: voiceless alveolopalatal fricative
 ç: voiceless palatal fricative
 ɗ: voiced alveolar implosive
@@ -26,7 +55,6 @@
 ɳ: voiced retroflex nasal
 ɲ: voiced palatal nasal
 ɴ: voiced uvular nasal
-ɸ: voiceless bilabial fricative
 θ: voiceless dental fricative
 ɹ: voiced postalveolar approximant
 ɺ: voiced alveolar lataral-flap
@@ -39,8 +67,6 @@
 ʃ: voiceless postalveolar fricative
 ʈ: voiceless retroflex plosive
 ʧ: voiceless postalveolar affricate
-ʋ: voiced labiodental approximant
-ⱱ: voiced labiodental flap
 ɣ: voiced velar fricative
 χ: voiceless uvular fricative
 ʎ: voiced palatal lateral-approximant
@@ -52,27 +78,38 @@
 ʢ: voiced epiglottal fricative
 
 -- tag: vowels
+ɶ: open front rounded
+ä: open central 
 ɑ: open back unrounded
-ɐ: near-open central -- alias open-mid schwa
 ɒ: open back rounded
-ɔ: open-mid back rounded
-ə: mid central vowel -- alias schwa
-ɘ: close-mid central -- alias close-mid schwa
+
+ɐ: near-open central -- alias open-mid schwa
+
+œ: open-mid front rounded
 ɛ: open-mid front unrounded
 ɜ: open-mid central
 ɞ: open-mid central rounded
-ɨ: close central unrounded
-ɪ: near-close front unrounded
-ɯ: close back unrounded
-ø: close-mid front rounded
-ɵ: close-mid central rounded vowel -- alias rounded schwa
-œ: open-mid front rounded
-ɶ: open front rounded
-ʉ: close central rounded
-ʊ: near-close back rounded
+ɔ: open-mid back rounded
 ʌ: open-mid back unrounded
+
+e̞: mid front
+ə: mid central -- alias schwa
+ɤ̞: mid back
+
+
+ø: close-mid front rounded
+ɘ: close-mid central -- alias close-mid schwa
+ɵ: close-mid central rounded vowel -- alias rounded schwa
 ɤ: close-mid back unrounded
+
+ɪ: near-close front unrounded
 ʏ: near-close front rounded
+ʊ: near-close back rounded
+
+i: close front
+ɨ: close central unrounded
+ʉ: close central rounded
+ɯ: close back unrounded
 
 -- tag: clicks
 ʘ: bilabial click

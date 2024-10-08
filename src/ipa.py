@@ -1,4 +1,3 @@
-
 from typing import Dict, List, Self
 
 CONSONANT_PLACE = [
@@ -80,6 +79,21 @@ class Consonant(Letter):
         self.place  = CONSONANT_PLACE.index(place)
         pass
 
+    def sonance(self) -> int:
+        if self.manner == 'lateral':
+            return 5
+        if self.manner == 'tap':
+            return 5
+        if self.manner == 'nasal':
+            return 4
+        if self.manner == 'fricatives':
+            return 3
+        if self.manner == 'affricate':
+            return 2
+        if self.manner == 'plosive':
+            return 1
+        return 0
+
     def __repr__(self) -> str:
         voiced = CONSONANT_VD_V_VL[self.voiced]
         manner = CONSONANT_MANNER[self.manner]
@@ -114,6 +128,9 @@ class Vowel(Letter):
         self.backness = VOWEL_BACKNESS.index(backness)
         pass
 
+    def sonance(self) -> int:
+        return 6
+
     def __repr__(self) -> str:
         # pad = 12 - len(self.height) 
         height =VOWEL_HEIGHT[self.height]
@@ -139,10 +156,40 @@ class Click(Letter):
         pass
 
 IPA_SYMBOLS : Dict[str, List[Letter]]= {
-    "consonants":[],
-    "vowels":[],
-    "clicks":[],
+    "consonants": [],
+    "vowels"    : [],
+    "clicks"    : [],
 }
+
+def find_vowel(name: str):
+    va = Vowel(name, '')
+    closest = None
+    for v in IPA_SYMBOLS['vowels']:
+        if type(v) != Vowel:
+            raise RuntimeError('non vowel in vowel dict')
+        if va.height == v.height and va.backness == v.backness:
+            closest = v
+            break
+    return closest
+
+def find_consonant(name: str):
+    va = Consonant(name, '')
+    closest = None
+    for v in IPA_SYMBOLS['vowels']:
+        if type(v) != Consonant:
+            raise RuntimeError('non vowel in vowel dict')
+        if v.place == va.place and v.manner == va.manner and v.voiced == va.voiced:
+            closest = v
+            break
+    return closest
+
+def find_consonant_symbol(symbol: str):
+    for v in IPA_SYMBOLS['consonants']:
+        if type(v) != Consonant:
+            raise RuntimeError('non vowel in vowel dict')
+        if v.symbol == symbol:
+            return v
+    return None
 
 def open_symbol_map():
     lines = []
@@ -170,7 +217,6 @@ def open_symbol_map():
             elif tag == 'clicks':
                 letter = Click(name, symbol)
             else:
-                print(f'{line} does not exists!!')
                 continue
             IPA_SYMBOLS[tag].append(letter)
 
@@ -196,3 +242,32 @@ def save_symbol_map():
     pass
 
 save_symbol_map()
+
+class Word:
+    def __init__(self, word: List[Letter]) -> None:
+        self.word = word
+        pass
+
+    def to_sonority(self) -> List[int]:
+        ls = []
+        for s in self.word:
+            ls.append(s.sonance())
+
+        return ls
+
+    def syllablelize(self)  -> List[Self]:
+        syllables = []
+        roots : List[int] = []
+        for index, letter in enumerate(self.word):
+            sonance = letter.sonance()
+            if sonance == 6:
+                roots.append(index)
+
+        return syllables
+
+    def __repr__(self) -> str:
+        s = ''
+        for letter in self.word:
+            s += letter.symbol
+
+        return s
