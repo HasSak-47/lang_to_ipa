@@ -1,0 +1,92 @@
+-- tag: consonants
+ʙ: voiced bilabial trill
+β: voiced bilabial fricative
+ɕ: voiceless alveolopalatal fricative
+ç: voiceless palatal fricative
+ɗ: voiced alveolar implosive
+ɖ: voiced retroflex plosive
+ð: voiced dental fricative
+ʤ: voiced postalveolar affricate
+ɟ: voiced palatal plosive
+ʄ: voiced palatal implosive
+ɡ: voiced velar plosive
+ɠ: voiced velar implosive
+ɢ: voiced uvular plosive
+ʛ: voiced uvular implosive
+ɦ: voiced glottal fricative
+ħ: voiceless pharyngeal fricative
+ʜ: voiceless epiglottal fricative
+ʝ: voiced palatal fricative
+ɭ: voiced retroflex lateral
+ɬ: voiceless alveolar lateral fricative
+ɮ: voiced alveolar lateral fricative
+ʟ: voiced velar lateral
+ɱ: voiced labiodental nasal
+ŋ: voiced velar nasal
+ɳ: voiced retroflex nasal
+ɲ: voiced palatal nasal
+ɴ: voiced uvular nasal
+ɸ: voiceless bilabial fricative
+θ: voiceless dental fricative
+ɹ: voiced postalveolar approximant
+ɺ: voiced alveolar lateral flap
+ɾ: voiced alveolar tap
+ɻ: voiced retroflex approximant
+ʀ: voiced uvular trill
+ʁ: voiced uvular fricative
+ɽ: voiced retroflex flap
+ʂ: voiceless retroflex fricative
+ʃ: voiceless postalveolar fricative
+ʈ: voiceless retroflex plosive
+ʧ: voiceless postalveolar affricate
+ʋ: voiced labiodental approximant
+ⱱ: voiced labiodental flap
+ɣ: voiced velar fricative
+χ: voiceless uvular fricative
+ʎ: voiced palatal lateral
+ʑ: voiced alveolopalatal fricative
+ʐ: voiced retroflex fricative
+ʒ: voiced postalveolar fricative
+ʡ: voiced epiglottal plosive
+ʕ: voiced pharyngeal fricative
+ʢ: voiced epiglottal fricative
+
+-- tag: vowels
+ɑ: open back unrounded
+# ɐ: open-mid -- alias open-mid schwa
+ɒ: open back rounded
+ɔ: open-mid back rounded
+ə: mid-central vowel -- alias schwa
+ɘ: close-mid central -- alias close-mid schwa
+ɛ: open-mid front unrounded
+ɜ: open-mid central
+ɞ: open-mid central rounded
+ɨ: close central unrounded
+ɪ: near-close front unrounded
+ɯ: close back unrounded
+ø: front close-mid rounded
+ɵ: close-mid central rounded vowel -- alias rounded schwa
+œ: front open-mid rounded
+ɶ: front open rounded
+ʉ: close central rounded
+ʊ: near-close back rounded
+ʌ: open-mid back unrounded
+ɤ: close-mid back unrounded
+ʏ: near-close front rounded
+
+-- tag: clicks
+ʘ: bilabial click
+ǀ: dental click
+ǁ: alveolar lateral click
+ǂ: alveolar click
+ǃ: retroflex click
+ʔ: glottal plosive
+
+-- tag: other
+ɥ: labial-palatal approximant
+ɝ: rhotacized open-mid central
+ɧ: voiceless multiple-place fricative
+ɫ: velarized voiced alveolar lateral
+ʍ: voiceless labial-velar fricative
+æ: raised open front unrounded
+ɰ: velar approximant

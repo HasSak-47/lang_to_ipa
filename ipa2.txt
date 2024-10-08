@@ -1,0 +1,23 @@
+-- tag: consonants
+-- tag: vowels
+ɑ: open back rounded
+ɒ: open back rounded
+ɶ: open front rounded
+ɐ: near-open central
+ɔ: open-mid back rounded
+ɛ: open-mid front rounded
+ɜ: open-mid central
+ɞ: open-mid central rounded
+œ: open-mid front rounded
+ʌ: open-mid back rounded
+ə: mid central
+ɘ: close-mid central
+ø: close-mid front rounded
+ɵ: close-mid central rounded
+ɤ: close-mid back rounded
+ɪ: near-close front rounded
+ʊ: near-close back rounded
+ʏ: near-close front rounded
+ɨ: close central rounded
+ɯ: close back rounded
+ʉ: close central rounded
