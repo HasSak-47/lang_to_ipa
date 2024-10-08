@@ -1,23 +1,37 @@
 
 from typing import Dict, List, Self
 
-
-CONST_TY = [
+CONSONANT_PLACE = [
     'bilabial', 'labiodental', 'linguolabial',
     'dental', 'alveolar', 'postalveolar',
-    'retroflex', 'palatal', 'velar',
-    'uvular', 'pharyngeal', 'glottal',
+    'retroflex', 'palatal', 'velar', 'uvular', 'pharyngeal', 'glottal',
 ]
 
-VD_V_VL = [ 'voiced', 'voiceless' ]
+CONSONANT_MANNER = [
+    'nasal',
+    'plosive',
+    'fricative',
+    'affricate',
+    'approximant',
+    'tap',
+    'trill',
+    'lateral-fricative',
+    'lateral-approximant',
+    'lateral-tap',
+    # other
+    'implosive',
+]
 
-VOWEL_POSITION = [
+
+CONSONANT_VD_V_VL = [ 'voiced', 'voiceless' ]
+
+VOWEL_BACKNESS = [
     'front',
-    'center',
+    'central',
     'back',
 ]
 
-VOWEL_OPENESS = [
+VOWEL_HEIGHT= [
     'open',
     'near-open',
     'open-mid',
@@ -28,13 +42,9 @@ VOWEL_OPENESS = [
 ]
 
 VOWEL_ROUNDNESS = [
-    'open',
-    'near-open',
-    'open-mid',
-    'mid',
-    'close-mid',
-    'near-mid',
-    'close',
+    'undefined',
+    'unrounded',
+    'rounded',
 ]
 
 class Letter:
@@ -58,42 +68,70 @@ class Consonant(Letter):
         super().__init__(name, symbol)
         
         split = self.name.split(' ')
-        self.voiced = 'voiced' in self.name
-        self.manner = split[-1]
-        self.place = ''
+        voiced = 'voiced' if 'voiced' in self.name else 'voiceless'
+        manner = split[-1]
+        place = ''
         for k in split[1:-1]:
-            self.place += k + ' '
-        self.place = self.place.strip(' ')
+            place += k + ' '
+        place = place.strip(' ')
+
+        self.voiced = CONSONANT_VD_V_VL.index(voiced)
+        self.manner = CONSONANT_MANNER.index(manner)
+        self.place  = CONSONANT_PLACE.index(place)
         pass
 
     def __repr__(self) -> str:
-        pad = 12 - len(self.manner)
-        return f'"{self.symbol}": voiced: {self.voiced:1}  manner: "{self.manner}" {' ':{pad}} place: "{self.place}"'
+        voiced = CONSONANT_VD_V_VL[self.voiced]
+        manner = CONSONANT_MANNER[self.manner]
+        place  = CONSONANT_PLACE[self.place]
+        return f'{self.symbol}: {voiced} {place} {manner}'
+
+    def __lt__(self, other: Self) -> bool:
+        if self.place == other.place:
+            if self.manner == other.manner:
+                return self.voiced < other.voiced
+            else:
+                return self.manner < other.manner
+        return self.place < other.place
 
 class Vowel(Letter):
     def __init__(self, name: str, symbol: str) -> None:
         super().__init__(name, symbol)
-        print('round' in self.name)
-        print('unround' in self.name)
-        print()
-        defined = 'round' in self.name
-        self.rounded = None
-        if defined:
-            self.rounded = 'unround' in self.name
+        rounded = ''
+        if 'rounded' in self.name and 'unrounded' in self.name:
+            rounded = 'rounded'
+        elif 'rounded' in self.name and 'unrounded' not in self.name:
+            rounded = 'rounded'
+        else:
+            rounded = 'undefined'
 
         split = self.name.split(' ')
-        self.height = split[0]
-        self.backness = split[1]
+        height = split[0]
+        backness = split[1]
+
+        self.rounded  = VOWEL_ROUNDNESS.index(rounded)
+        self.height   = VOWEL_HEIGHT.index(height)
+        self.backness = VOWEL_BACKNESS.index(backness)
         pass
 
     def __repr__(self) -> str:
-        pad = 12 - len(self.height)
-        k = f'"{self.symbol}": height: "{self.height}" {' ':{pad}} backness: "{self.backness}"'
-        if self.rounded is not None:
-            pad = 12 - len(self.backness)
-            k += f' {' ':{pad}} rounded: {self.rounded:1}'
+        # pad = 12 - len(self.height) 
+        height =VOWEL_HEIGHT[self.height]
+        backness =VOWEL_BACKNESS[self.backness]
+        rounded =VOWEL_ROUNDNESS[self.rounded]
+        k = f'{self.symbol}: {height} {backness}'
+        if rounded != 'undefined':
+            k += ' ' + rounded
 
         return k
+
+    def __lt__(self, other: Self) -> bool:
+        if self.height == other.height:
+            if self.backness == other.backness:
+                return self.rounded < self.rounded
+            return self.backness < self.backness
+
+        return self.height < other.height
 
 class Click(Letter):
     def __init__(self, name: str, symbol: str) -> None:
@@ -110,7 +148,6 @@ def open_symbol_map():
     lines = []
     with open("ipa.txt", "r") as file:
         lines = [line[:-1] for line in file.readlines()]
-
 
     tag = ''
     for line in lines:
@@ -139,5 +176,23 @@ def open_symbol_map():
 
     pass
 
-
 open_symbol_map()
+
+def save_symbol_map():
+    with open('ipa2.txt', 'w+') as file:
+        file.write('-- tag: consonants\n');
+        IPA_SYMBOLS["consonants"].sort() # pyright: ignore
+        for cons in IPA_SYMBOLS["consonants"]:
+            if type(cons) != Consonant:
+                continue
+            file.write(f'{cons}\n')
+
+        file.write('-- tag: vowels\n');
+        IPA_SYMBOLS["vowels"].sort() # pyright: ignore
+        for vowel in IPA_SYMBOLS["vowels"]:
+            if type(vowel) != Vowel:
+                continue
+            file.write(f'{vowel}\n')
+    pass
+
+save_symbol_map()

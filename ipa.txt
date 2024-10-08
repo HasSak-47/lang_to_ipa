@@ -1,4 +1,4 @@
--- tag: consonants
+-- tag: consonantsipa.
 ʙ: voiced bilabial trill
 β: voiced bilabial fricative
 ɕ: voiceless alveolopalatal fricative
@@ -17,10 +17,10 @@
 ħ: voiceless pharyngeal fricative
 ʜ: voiceless epiglottal fricative
 ʝ: voiced palatal fricative
-ɭ: voiced retroflex lateral
-ɬ: voiceless alveolar lateral fricative
-ɮ: voiced alveolar lateral fricative
-ʟ: voiced velar lateral
+ɭ: voiced retroflex lateral-approximant
+ɬ: voiceless alveolar lataral-fricative
+ɮ: voiced alveolar lataral-fricative
+ʟ: voiced velar lateral-approximant
 ɱ: voiced labiodental nasal
 ŋ: voiced velar nasal
 ɳ: voiced retroflex nasal
@@ -29,7 +29,7 @@
 ɸ: voiceless bilabial fricative
 θ: voiceless dental fricative
 ɹ: voiced postalveolar approximant
-ɺ: voiced alveolar lateral flap
+ɺ: voiced alveolar lataral-flap
 ɾ: voiced alveolar tap
 ɻ: voiced retroflex approximant
 ʀ: voiced uvular trill
@@ -43,7 +43,7 @@
 ⱱ: voiced labiodental flap
 ɣ: voiced velar fricative
 χ: voiceless uvular fricative
-ʎ: voiced palatal lateral
+ʎ: voiced palatal lateral-approximant
 ʑ: voiced alveolopalatal fricative
 ʐ: voiced retroflex fricative
 ʒ: voiced postalveolar fricative
@@ -53,10 +53,10 @@
 
 -- tag: vowels
 ɑ: open back unrounded
-# ɐ: open-mid -- alias open-mid schwa
+ɐ: near-open central -- alias open-mid schwa
 ɒ: open back rounded
 ɔ: open-mid back rounded
-ə: mid-central vowel -- alias schwa
+ə: mid central vowel -- alias schwa
 ɘ: close-mid central -- alias close-mid schwa
 ɛ: open-mid front unrounded
 ɜ: open-mid central
@@ -64,10 +64,10 @@
 ɨ: close central unrounded
 ɪ: near-close front unrounded
 ɯ: close back unrounded
-ø: front close-mid rounded
+ø: close-mid front rounded
 ɵ: close-mid central rounded vowel -- alias rounded schwa
-œ: front open-mid rounded
-ɶ: front open rounded
+œ: open-mid front rounded
+ɶ: open front rounded
 ʉ: close central rounded
 ʊ: near-close back rounded
 ʌ: open-mid back unrounded
@@ -77,7 +77,7 @@
 -- tag: clicks
 ʘ: bilabial click
 ǀ: dental click
-ǁ: alveolar lateral click
+ǁ: alveolar lataral-click
 ǂ: alveolar click
 ǃ: retroflex click
 ʔ: glottal plosive
@@ -86,7 +86,7 @@
 ɥ: labial-palatal approximant
 ɝ: rhotacized open-mid central
 ɧ: voiceless multiple-place fricative
-ɫ: velarized voiced alveolar lateral
+ɫ: velarized voiced alveolar lateral-approximant
 ʍ: voiceless labial-velar fricative
 æ: raised open front unrounded
 ɰ: velar approximant
