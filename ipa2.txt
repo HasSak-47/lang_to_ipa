@@ -1,23 +1,94 @@
 -- tag: consonants
+m: voiced bilabial nasal
+b: voiced bilabial plosive
+p: voiceless bilabial plosive
+β: voiced bilabial fricative
+ɸ: voiceless bilabial fricative
+ʙ: voiced bilabial trill
+ɱ: voiced labiodental nasal
+ɱ: voiced labiodental nasal
+f: voiceless labiodental affricate
+ʋ: voiced labiodental approximant
+ⱱ: voiced labiodental tap
+d: voiced dental plosive
+t: voiceless dental plosive
+ð: voiced dental fricative
+θ: voiceless dental fricative
+n: voiced alveolar nasal
+d: voiced alveolar plosive
+t: voiceless alveolar plosive
+s: voiceless alveolar fricative
+ɾ: voiced alveolar tap
+ɮ: voiced alveolar lateral-fricative
+ɬ: voiceless alveolar lateral-fricative
+l: voiced alveolar lateral-approximant
+ɺ: voiced alveolar lateral-tap
+ɗ: voiced alveolar implosive
+d: voiced postalveolar plosive
+t: voiceless postalveolar plosive
+ʒ: voiced postalveolar fricative
+ʃ: voiceless postalveolar fricative
+ʤ: voiced postalveolar affricate
+ʧ: voiceless postalveolar affricate
+ɹ: voiced postalveolar approximant
+ɳ: voiced retroflex nasal
+ɖ: voiced retroflex plosive
+ʈ: voiceless retroflex plosive
+ʐ: voiced retroflex fricative
+ʂ: voiceless retroflex fricative
+ɻ: voiced retroflex approximant
+ɽ: voiced retroflex tap
+ɭ: voiced retroflex lateral-approximant
+ɲ: voiced palatal nasal
+ɟ: voiced palatal plosive
+ʝ: voiced palatal fricative
+ʑ: voiced palatal fricative
+ɕ: voiceless palatal fricative
+ç: voiceless palatal fricative
+ʎ: voiced palatal lateral-approximant
+ʄ: voiced palatal implosive
+ŋ: voiced velar nasal
+ɡ: voiced velar plosive
+k: voiceless velar plosive
+ɣ: voiced velar fricative
+x: voiceless velar fricative
+ʟ: voiced velar lateral-approximant
+ɠ: voiced velar implosive
+ɴ: voiced uvular nasal
+ɢ: voiced uvular plosive
+ʁ: voiced uvular fricative
+χ: voiceless uvular fricative
+ʀ: voiced uvular trill
+ʛ: voiced uvular implosive
+ʡ: voiced pharyngeal plosive
+ʕ: voiced pharyngeal fricative
+ʢ: voiced pharyngeal fricative
+ħ: voiceless pharyngeal fricative
+ʜ: voiceless pharyngeal fricative
+ɦ: voiced glottal fricative
 -- tag: vowels
+ɶ: open front rounded
+ä: open central
 ɑ: open back rounded
 ɒ: open back rounded
-ɶ: open front rounded
 ɐ: near-open central
-ɔ: open-mid back rounded
+œ: open-mid front rounded
 ɛ: open-mid front rounded
 ɜ: open-mid central
 ɞ: open-mid central rounded
-œ: open-mid front rounded
+ɔ: open-mid back rounded
 ʌ: open-mid back rounded
+e̞: mid front
 ə: mid central
-ɘ: close-mid central
+ɤ̞: mid back
 ø: close-mid front rounded
+ɘ: close-mid central
 ɵ: close-mid central rounded
 ɤ: close-mid back rounded
 ɪ: near-close front rounded
-ʊ: near-close back rounded
 ʏ: near-close front rounded
+ʊ: near-close back rounded
+i: close front
 ɨ: close central rounded
-ɯ: close back rounded
 ʉ: close central rounded
+ɯ: close back rounded
