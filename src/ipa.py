@@ -102,10 +102,9 @@ class Consonant(Letter):
 
     def __lt__(self, other: Self) -> bool:
         if self.place == other.place:
-            if self.manner == other.manner:
+            if self.manner  == other.manner:
                 return self.voiced < other.voiced
-            else:
-                return self.manner < other.manner
+            return self.manner < other.manner
         return self.place < other.place
 
 class Vowel(Letter):
@@ -257,11 +256,33 @@ class Word:
 
     def syllablelize(self)  -> List[Self]:
         syllables = []
-        roots : List[int] = []
-        for index, letter in enumerate(self.word):
-            sonance = letter.sonance()
-            if sonance == 6:
-                roots.append(index)
+        sonance : List[int] = []
+        for letter in self.word:
+            sonance.append(letter.sonance())
+
+        prev1 = None
+        prev2 = None
+        currn = None
+
+        for index, son in enumerate(sonance):
+            prev2 = prev1
+            prev1 = currn
+            currn = son
+
+            d1 = 0
+            if prev2 is None or prev1 is None:
+                continue
+
+            if prev2 < prev1 and currn < prev1:
+                pass
+
+            pass
+
+
+
+
+        print(f'{syllables}')
+
 
         return syllables
 

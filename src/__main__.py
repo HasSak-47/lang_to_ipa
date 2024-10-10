@@ -8,8 +8,10 @@ def main():
         words = [line[:-1].strip(' ') for line in file.readlines()]
 
     for word in words:
-        ipa : Word = spanish_to_ipa(word)
-        print(f'{word}: {ipa}')
+        ipa_word : Word = spanish_to_ipa(word)
+        syllables = ipa_word.syllablelize()
+        break
+
 
     return
 

@@ -43,9 +43,7 @@ s: voiceless alveolar fricative
 ɢ: voiced uvular plosive
 ʛ: voiced uvular implosive
 ɦ: voiced glottal fricative
-ħ: voiceless pharyngeal fricative
-ʜ: voiceless pharyngeal fricative
-ʝ: voiced palatal fricative
+ʝ: voiced palatal affricate
 ɭ: voiced retroflex lateral-approximant
 ɬ: voiceless alveolar lateral-fricative
 ɮ: voiced alveolar lateral-fricative
@@ -73,9 +71,12 @@ s: voiceless alveolar fricative
 ʑ: voiced palatal fricative
 ʐ: voiced retroflex fricative
 ʒ: voiced postalveolar fricative
+
+ħ: voiceless pharyngeal fricative
+ʜ: voiceless pharyngeal trill
 ʡ: voiced pharyngeal plosive
 ʕ: voiced pharyngeal fricative
-ʢ: voiced pharyngeal fricative
+ʢ: voiced pharyngeal trill
 
 -- tag: vowels
 ɶ: open front rounded
